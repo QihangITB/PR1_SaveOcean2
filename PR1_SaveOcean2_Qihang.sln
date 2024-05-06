@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR1_SaveOcean2_Qihang", "PR1_SaveOcean2_Qihang\PR1_SaveOcean2_Qihang.csproj", "{AC6A4FD1-9DA2-4026-BF70-079D12F0B3B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PR1_SaveOcean2_Qihang", "PR1_SaveOcean2_Qihang\PR1_SaveOcean2_Qihang.csproj", "{AC6A4FD1-9DA2-4026-BF70-079D12F0B3B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersistenceLibrary", "PersistenceLibrary\PersistenceLibrary.csproj", "{0967B605-36AB-415B-B972-64B2C003466E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectLibrary", "ObjectLibrary\ObjectLibrary.csproj", "{72B3A607-45DB-47A0-ACD0-CA8159050785}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{AC6A4FD1-9DA2-4026-BF70-079D12F0B3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC6A4FD1-9DA2-4026-BF70-079D12F0B3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC6A4FD1-9DA2-4026-BF70-079D12F0B3B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0967B605-36AB-415B-B972-64B2C003466E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0967B605-36AB-415B-B972-64B2C003466E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0967B605-36AB-415B-B972-64B2C003466E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0967B605-36AB-415B-B972-64B2C003466E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B3A607-45DB-47A0-ACD0-CA8159050785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B3A607-45DB-47A0-ACD0-CA8159050785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B3A607-45DB-47A0-ACD0-CA8159050785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B3A607-45DB-47A0-ACD0-CA8159050785}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
