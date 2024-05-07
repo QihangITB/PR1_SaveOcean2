@@ -91,13 +91,14 @@ namespace PersistenceLibrary.BBDDPersistence.Mapping
 
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {
-                string query = "UPDATE animal SET Name = @name, SuperFamily = @superFamily, Species = @species, Weight = @weight WHERE Id = @Id";
+                string query = "UPDATE animal SET name = @name, super_family = @superFamily, species = @species, weight = @weight WHERE id = @Id";
                 NpgsqlCommand command = new NpgsqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Name", animal.Name);
-                command.Parameters.AddWithValue("@SuperFamily", animal.SuperFamily);
-                command.Parameters.AddWithValue("@Species", animal.Species);
-                command.Parameters.AddWithValue("@Weight", animal.Weight);
-                command.Parameters.AddWithValue("@Id", animal.Id);
+                command.Parameters.AddWithValue("@name", animal.Name);
+                command.Parameters.AddWithValue("@superFamily", animal.SuperFamily);
+                command.Parameters.AddWithValue("@species", animal.Species);
+                command.Parameters.AddWithValue("@weight", animal.Weight);
+                command.Parameters.AddWithValue("@id", animal.Id);
+                connection.Open();
                 command.ExecuteNonQuery();
             }
         }

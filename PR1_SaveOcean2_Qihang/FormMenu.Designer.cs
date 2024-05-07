@@ -31,6 +31,8 @@
             lblGameTitle = new Label();
             btnPlay = new Button();
             btnExit = new Button();
+            btnEdit = new Button();
+            btnHistorial = new Button();
             SuspendLayout();
             // 
             // lblGameTitle
@@ -48,7 +50,7 @@
             // btnPlay
             // 
             btnPlay.Font = new Font("Segoe UI", 15F);
-            btnPlay.Location = new Point(250, 165);
+            btnPlay.Location = new Point(250, 155);
             btnPlay.Name = "btnPlay";
             btnPlay.Size = new Size(145, 40);
             btnPlay.TabIndex = 1;
@@ -59,7 +61,7 @@
             // btnExit
             // 
             btnExit.Font = new Font("Segoe UI", 15F);
-            btnExit.Location = new Point(250, 228);
+            btnExit.Location = new Point(250, 293);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(145, 40);
             btnExit.TabIndex = 2;
@@ -67,11 +69,34 @@
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
             // 
+            // btnEdit
+            // 
+            btnEdit.Font = new Font("Segoe UI", 15F);
+            btnEdit.Location = new Point(250, 201);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(145, 40);
+            btnEdit.TabIndex = 3;
+            btnEdit.Text = "EDIT";
+            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
+            // 
+            // btnHistorial
+            // 
+            btnHistorial.Font = new Font("Segoe UI", 15F);
+            btnHistorial.Location = new Point(250, 247);
+            btnHistorial.Name = "btnHistorial";
+            btnHistorial.Size = new Size(145, 40);
+            btnHistorial.TabIndex = 4;
+            btnHistorial.Text = "RECORD";
+            btnHistorial.UseVisualStyleBackColor = true;
+            // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(656, 378);
+            Controls.Add(btnHistorial);
+            Controls.Add(btnEdit);
             Controls.Add(btnExit);
             Controls.Add(btnPlay);
             Controls.Add(lblGameTitle);
@@ -86,5 +111,7 @@
         private Label lblGameTitle;
         private Button btnPlay;
         private Button btnExit;
+        private Button btnEdit;
+        private Button btnHistorial;
     }
 }

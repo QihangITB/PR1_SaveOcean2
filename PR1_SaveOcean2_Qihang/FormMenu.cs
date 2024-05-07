@@ -17,5 +17,11 @@ namespace PR1_SaveOcean2_Qihang
             FormRegister register = new FormRegister();
             register.Show();
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            FormEdit edit = new FormEdit();
+            edit.Show();
+        }
     }
 }

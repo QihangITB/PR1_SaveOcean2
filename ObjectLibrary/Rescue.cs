@@ -37,10 +37,10 @@ namespace ObjectLibrary
         /// <summary>
         /// Method that returns a string with the current date.
         /// </summary>
-        /// <returns> A String with the current date in a "dd/MM/yyyy" format.</returns>
+        /// <returns> A String with the current date in a date-hour format.</returns>
         private static string RegisterDate()
         {
-            return DateTime.Now.ToString("dd/MM/yyyy");
+            return DateTime.Now.ToString();
         }
 
         /// <summary>

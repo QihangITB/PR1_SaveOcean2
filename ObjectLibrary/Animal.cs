@@ -12,14 +12,16 @@ namespace ObjectLibrary
         public string? Species { get; set; }
         public float Weight { get; set; }
 
-        public Animal(string name, string superFamily, string species, float weight)
+        public Animal(int id, string name, string superFamily, string species, float weight)
         {
-            Id = DefaultIntValue;
+            Id = id;
             Name = name;
             SuperFamily = superFamily;
             Species = species;
             Weight = weight;
         }
+
+        public Animal(string name, string superFamily, string species, float weight) : this(DefaultIntValue, name, superFamily, species, weight) { }
 
         public Animal() : this(DefaultStringValue, DefaultStringValue, DefaultStringValue, DefaultIntValue) { }
 
