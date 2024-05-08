@@ -110,6 +110,7 @@
             // 
             // groupBoxEdition
             // 
+            groupBoxEdition.BackColor = Color.LightBlue;
             groupBoxEdition.Controls.Add(comboFamily);
             groupBoxEdition.Controls.Add(txtWeight);
             groupBoxEdition.Controls.Add(txtSpecies);
@@ -223,6 +224,7 @@
             // 
             // groupBoxMsg
             // 
+            groupBoxMsg.BackColor = Color.LightBlue;
             groupBoxMsg.Controls.Add(lblUserMsg);
             groupBoxMsg.Font = new Font("Segoe UI", 11F);
             groupBoxMsg.Location = new Point(422, 307);
@@ -247,6 +249,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSkyBlue;
             ClientSize = new Size(800, 450);
             Controls.Add(groupBoxMsg);
             Controls.Add(groupBoxEdition);

@@ -37,11 +37,14 @@ namespace PR1_SaveOcean2_Qihang
 
         private void dataGridRecord_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            lblCode.Text = "Code: " + dataGridRecord.Rows[e.RowIndex].Cells["Code"].Value.ToString();
-            lblDate.Text = "Date: " + dataGridRecord.Rows[e.RowIndex].Cells["Date"].Value.ToString();
-            lblAnimal.Text = "Animal: " + dataGridRecord.Rows[e.RowIndex].Cells["Family"].Value.ToString();
-            lblAG.Text = "Affectation: " + dataGridRecord.Rows[e.RowIndex].Cells["AffectationGrade"].Value.ToString();
-            lblLocation.Text = "Location: " + dataGridRecord.Rows[e.RowIndex].Cells["Location"].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                lblCode.Text = "Code: " + dataGridRecord.Rows[e.RowIndex].Cells["Code"].Value.ToString();
+                lblDate.Text = "Date: " + dataGridRecord.Rows[e.RowIndex].Cells["Date"].Value.ToString();
+                lblAnimal.Text = "Animal: " + dataGridRecord.Rows[e.RowIndex].Cells["Family"].Value.ToString();
+                lblAG.Text = "Affectation: " + dataGridRecord.Rows[e.RowIndex].Cells["AffectationGrade"].Value.ToString();
+                lblLocation.Text = "Location: " + dataGridRecord.Rows[e.RowIndex].Cells["Location"].Value.ToString();
+            }
         }
 
         private void btnHome_Click(object sender, EventArgs e)

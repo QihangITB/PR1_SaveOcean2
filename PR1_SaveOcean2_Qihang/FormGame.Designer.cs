@@ -160,6 +160,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightGoldenrodYellow;
             ClientSize = new Size(792, 488);
             Controls.Add(lblAffectation);
             Controls.Add(btnMove);

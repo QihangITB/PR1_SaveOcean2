@@ -50,6 +50,8 @@
             // 
             // btnTechnical
             // 
+            btnTechnical.Font = new Font("Segoe UI", 11F);
+            btnTechnical.ForeColor = SystemColors.ControlText;
             btnTechnical.Location = new Point(37, 200);
             btnTechnical.Name = "btnTechnical";
             btnTechnical.Size = new Size(111, 44);
@@ -60,6 +62,7 @@
             // 
             // btnVet
             // 
+            btnVet.Font = new Font("Segoe UI", 11F);
             btnVet.Location = new Point(168, 200);
             btnVet.Name = "btnVet";
             btnVet.Size = new Size(111, 44);
@@ -96,6 +99,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.Disable;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(320, 285);
             Controls.Add(txtName);
             Controls.Add(lblMsgName);

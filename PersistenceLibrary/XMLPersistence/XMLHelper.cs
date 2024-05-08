@@ -15,6 +15,14 @@ namespace PersistenceLibrary.XMLPersistence
         private const string DefaultStringValue = "";
         private const int DefaultIntValue = 0;
 
+        /// <summary>
+        /// Method to create a specific XML file for recording the data of the games.
+        /// </summary>
+        /// <param name="player">The object with all the player data.</param>
+        /// <param name="rescue">The object with all the rescue data.</param>
+        /// <param name="userAction">A int value which represent the action that choose the player to solve the problem.</param>
+        /// <param name="finalAG">The final percentage of the affection grade after the action that has choose the player. </param>
+        /// <param name="finalExp">The experience that have the player after the results.</param>
         public static void CreateGamesDataXML(Player player,Rescue rescue, int userAction, int finalAG, int finalExp)
         {
             string path = "../../../Files/XML/games_data.xml";
@@ -51,6 +59,14 @@ namespace PersistenceLibrary.XMLPersistence
             xmlDoc.Save(path);
         }
 
+        /// <summary>
+        /// Method to update the existing XML file, with the new data of the games.
+        /// </summary>
+        /// <param name="player">The object with all the player data.</param>
+        /// <param name="rescue">The object with all the rescue data.</param>
+        /// <param name="userAction">A int value which represent the action that choose the player to solve the problem.</param>
+        /// <param name="finalAG">The final percentage of the affection grade after the action that has choose the player. </param>
+        /// <param name="finalExp">The experience that have the player after the results.</param>
         public static void AddGamesDataXML(Player player, Rescue rescue, Animal animal, int userAction, int finalAG, int finalExp)
         {
             string path = "../../../Files/XML/games_data.xml";
@@ -87,12 +103,19 @@ namespace PersistenceLibrary.XMLPersistence
             xmlDoc.Save(path);
         }
 
+        /// <summary>
+        /// Method to delete the XML file.
+        /// </summary>
         public static void DeleteGamesDataXML()
         {
             string path = "../../../Files/XML/games_data.xml";
             File.Delete(path);
         }
 
+        /// <summary>
+        /// Method that Selects all the rescues of each games from the XML file and returns a list of Rescue objects.
+        /// </summary>
+        /// <returns>Returns a List of Rescue Object.</returns>
         public static List<Rescue> GetRescueList()
         {
             string path = "../../../Files/XML/games_data.xml";

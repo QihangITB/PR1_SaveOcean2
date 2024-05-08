@@ -58,9 +58,9 @@
             // lblAffectation
             // 
             lblAffectation.Font = new Font("Segoe UI", 12F);
-            lblAffectation.Location = new Point(12, 120);
+            lblAffectation.Location = new Point(148, 119);
             lblAffectation.Name = "lblAffectation";
-            lblAffectation.Size = new Size(534, 28);
+            lblAffectation.Size = new Size(269, 28);
             lblAffectation.TabIndex = 2;
             lblAffectation.Text = "Affectation grade:";
             lblAffectation.TextAlign = ContentAlignment.MiddleCenter;
@@ -68,9 +68,9 @@
             // lblExperience
             // 
             lblExperience.Font = new Font("Segoe UI", 12F);
-            lblExperience.Location = new Point(12, 148);
+            lblExperience.Location = new Point(148, 147);
             lblExperience.Name = "lblExperience";
-            lblExperience.Size = new Size(534, 28);
+            lblExperience.Size = new Size(269, 28);
             lblExperience.TabIndex = 3;
             lblExperience.Text = "Player experience:";
             lblExperience.TextAlign = ContentAlignment.MiddleCenter;
@@ -79,6 +79,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.ocean;
             ClientSize = new Size(558, 250);
             Controls.Add(lblExperience);
             Controls.Add(lblAffectation);

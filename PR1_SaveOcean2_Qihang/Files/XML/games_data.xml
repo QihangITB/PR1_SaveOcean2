@@ -23,4 +23,96 @@
     <finalAffectationGrade>32</finalAffectationGrade>
     <finalPlayerExperience>25</finalPlayerExperience>
   </game>
+  <game>
+    <player>
+      <name>Qihang</name>
+      <role>Vet</role>
+      <experience>80</experience>
+    </player>
+    <rescue>
+      <code>RES010</code>
+      <date>08/05/2024 3:06:22</date>
+      <animal>
+        <id>10</id>
+        <name>Poppy Two</name>
+        <superFamily>Sea Bird</superFamily>
+        <species>Albatross</species>
+        <weight>8</weight>
+      </animal>
+      <affectationGrade>60</affectationGrade>
+      <location>Barcelona</location>
+    </rescue>
+    <userAction>Move to a medical center</userAction>
+    <finalAffectationGrade>12</finalAffectationGrade>
+    <finalPlayerExperience>130</finalPlayerExperience>
+  </game>
+  <game>
+    <player>
+      <name>Milan</name>
+      <role>Technical</role>
+      <experience>45</experience>
+    </player>
+    <rescue>
+      <code>RES658</code>
+      <date>08/05/2024 3:07:39</date>
+      <animal>
+        <id>24</id>
+        <name>tress</name>
+        <superFamily>Sea Bird</superFamily>
+        <species>Emp Penguin</species>
+        <weight>23.02</weight>
+      </animal>
+      <affectationGrade>69</affectationGrade>
+      <location>Barcelona</location>
+    </rescue>
+    <userAction>Heal in the current location</userAction>
+    <finalAffectationGrade>12</finalAffectationGrade>
+    <finalPlayerExperience>95</finalPlayerExperience>
+  </game>
+  <game>
+    <player>
+      <name>Lara</name>
+      <role>Vet</role>
+      <experience>80</experience>
+    </player>
+    <rescue>
+      <code>RES736</code>
+      <date>08/05/2024 3:09:25</date>
+      <animal>
+        <id>6</id>
+        <name>Poppy</name>
+        <superFamily>Sea Bird</superFamily>
+        <species>Albatross</species>
+        <weight>8</weight>
+      </animal>
+      <affectationGrade>99</affectationGrade>
+      <location>Barcelona</location>
+    </rescue>
+    <userAction>Move to a medical center</userAction>
+    <finalAffectationGrade>19</finalAffectationGrade>
+    <finalPlayerExperience>130</finalPlayerExperience>
+  </game>
+  <game>
+    <player>
+      <name>daw</name>
+      <role>Technical</role>
+      <experience>45</experience>
+    </player>
+    <rescue>
+      <code>RES555</code>
+      <date>08/05/2024 3:09:36</date>
+      <animal>
+        <id>3</id>
+        <name>Samy</name>
+        <superFamily>Cetacean</superFamily>
+        <species>Killer Whale</species>
+        <weight>3500</weight>
+      </animal>
+      <affectationGrade>34</affectationGrade>
+      <location>Barcelona</location>
+    </rescue>
+    <userAction>Move to a medical center</userAction>
+    <finalAffectationGrade>28</finalAffectationGrade>
+    <finalPlayerExperience>95</finalPlayerExperience>
+  </game>
 </games_data>

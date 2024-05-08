@@ -14,6 +14,10 @@ namespace PersistenceLibrary.BBDDPersistence.Mapping
             this.connectionString = connectionString;
         }
 
+        /// <summary>
+        /// Method that Selects all the animals from the database.
+        /// </summary>
+        /// <returns>A List of Animal Object </returns>
         public List<Animal> GetAllAnimals()
         {
             List<Animal> animals = new List<Animal>();
@@ -33,6 +37,11 @@ namespace PersistenceLibrary.BBDDPersistence.Mapping
             return animals;
         }
 
+        /// <summary>
+        /// Method that Select a animal from the database that has the Id.
+        /// </summary>
+        /// <param name="id">Unique identification to search the object in the DB</param>
+        /// <returns>A object Animal that has the Id</returns>
         public Animal GetAnimalById(int id)
         {
             Animal animal = null;
@@ -55,6 +64,11 @@ namespace PersistenceLibrary.BBDDPersistence.Mapping
             return animal; ;
         }
 
+        /// <summary>
+        /// Method that deletes a animal from the database that has the Id.
+        /// </summary>
+        /// <param name="id">Unique identification to search the object in the DB</param>
+
         public void DeleteAnimal(int id)
         {
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
@@ -67,6 +81,10 @@ namespace PersistenceLibrary.BBDDPersistence.Mapping
             }
         }
 
+        /// <summary>
+        /// Method that insert a animal to the database.
+        /// </summary>
+        /// <param name="animal">A object Animal that will be inserted.</param>
         public void InsertAnimal(Animal animal)
         {
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
@@ -82,6 +100,10 @@ namespace PersistenceLibrary.BBDDPersistence.Mapping
             }
         }
 
+        /// <summary>
+        /// Method that update a animal from the database.
+        /// </summary>
+        /// <param name="animal">A object Animal that will be updated.</param>
         public void UpdateAnimal(Animal animal)
         {
             if (animal.Id == 0)

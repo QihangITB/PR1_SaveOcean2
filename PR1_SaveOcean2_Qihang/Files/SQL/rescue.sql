@@ -1,7 +1,0 @@
-﻿CREATE TABLE IF NOT EXISTS rescue (
-    code VARCHAR PRIMARY KEY,
-    date DATE NOT NULL,
-    animal VARCHAR NOT NULL,
-    affectation_grade NUMERIC NOT NULL,
-    location VARCHAR NOT NULL
-);
