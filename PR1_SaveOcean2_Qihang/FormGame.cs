@@ -3,6 +3,7 @@ using ObjectLibrary;
 using PersistenceLibrary.BBDDPersistence.DAO;
 using PersistenceLibrary.BBDDPersistence.Mapping;
 using PersistenceLibrary.BBDDPersistence.Utils;
+using PersistenceLibrary.XMLPersistence;
 
 namespace PR1_SaveOcean2_Qihang
 {
@@ -10,11 +11,14 @@ namespace PR1_SaveOcean2_Qihang
     {
         private Animal animal;
         private Rescue rescue;
+        private Player player;
         private int resultAffectationGrade;
+        private int resultPlayerExperience;
 
-        public FormGame()
+        public FormGame(Player player)
         {
             InitializeComponent();
+            this.player = player;
         }
 
         private void FormGame_Load(object sender, EventArgs e)
@@ -74,13 +78,41 @@ namespace PR1_SaveOcean2_Qihang
         private void btnHeal_Click(object sender, EventArgs e)
         {
             int healOption = 1;
-            resultAffectationGrade = CalculateTreatment(healOption);
+            SaveResults(healOption);
+
+            FormResult result = new FormResult(resultAffectationGrade, resultPlayerExperience);
+            result.Show();
+            this.Close();
         }
 
         private void btnMove_Click(object sender, EventArgs e)
         {
             int moveOption = 2;
-            resultAffectationGrade = CalculateTreatment(moveOption);
+            SaveResults(moveOption);
+
+            FormResult result = new FormResult(resultAffectationGrade, resultPlayerExperience);
+            result.Show();
+            this.Close();
+        }
+
+        private void SaveResults(int userAction)
+        {
+            const int limitExperience = 30;
+            const int AddExperience = 50;
+            const int SubstractExperience = 20;
+
+            resultAffectationGrade = CalculateTreatment(userAction);
+
+            resultPlayerExperience = resultAffectationGrade <= limitExperience ? player.Experience + AddExperience : player.Experience - SubstractExperience;
+
+            if (File.Exists("../../../Files/XML/games_data.xml"))
+            {
+                XMLHelper.AddGamesDataXML(player, rescue, animal, userAction, resultAffectationGrade, resultPlayerExperience);
+            }
+            else
+            {
+                XMLHelper.CreateGamesDataXML(player, rescue, userAction, resultAffectationGrade, resultPlayerExperience);
+            }
         }
 
         private int CalculateTreatment(int userOption)

@@ -89,11 +89,13 @@
             btnHistorial.TabIndex = 4;
             btnHistorial.Text = "RECORD";
             btnHistorial.UseVisualStyleBackColor = true;
+            btnHistorial.Click += btnHistorial_Click;
             // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = PR1_SaveOcean2_Qihang.Properties.Resources.ocean;
             ClientSize = new Size(656, 378);
             Controls.Add(btnHistorial);
             Controls.Add(btnEdit);

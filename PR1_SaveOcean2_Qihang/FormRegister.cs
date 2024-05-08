@@ -8,12 +8,15 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ObjectLibrary;
 
 namespace PR1_SaveOcean2_Qihang
 {
     public partial class FormRegister : Form
     {
         const int MinNameLength = 3, MaxNameLength = 15;
+
+
         public FormRegister()
         {
             InitializeComponent();
@@ -23,16 +26,22 @@ namespace PR1_SaveOcean2_Qihang
         {
             if (ValidateChildren())
             {
-                FormGame game = new FormGame();
+                Player player = new Player(txtName.Text, "Technical", 45);
+                FormGame game = new FormGame(player);
                 game.Show();
-                this.Hide();
+                this.Close();
             }
-
         }
 
         private void btnVet_Click(object sender, EventArgs e)
         {
-
+            if (ValidateChildren())
+            {
+                Player player = new Player(txtName.Text, "Vet", 80);
+                FormGame game = new FormGame(player);
+                game.Show();
+                this.Close();
+            }
         }
 
         private void txtName_Validating(object sender, CancelEventArgs e)

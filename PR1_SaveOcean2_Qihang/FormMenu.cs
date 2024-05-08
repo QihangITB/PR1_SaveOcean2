@@ -23,5 +23,11 @@ namespace PR1_SaveOcean2_Qihang
             FormEdit edit = new FormEdit();
             edit.Show();
         }
+
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            FormRecord record = new FormRecord();
+            record.Show();
+        }
     }
 }

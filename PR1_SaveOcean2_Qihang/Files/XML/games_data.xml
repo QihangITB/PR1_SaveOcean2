@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<games_data>
+  <game>
+    <player>
+      <name>Carloss</name>
+      <role>Technical</role>
+      <experience>45</experience>
+    </player>
+    <rescue>
+      <code>RES658</code>
+      <date>08/05/2024 2:24:24</date>
+      <animal>
+        <id>21</id>
+        <name>Wobby</name>
+        <superFamily>Cetacean</superFamily>
+        <species>Whale</species>
+        <weight>40000</weight>
+      </animal>
+      <affectationGrade>40</affectationGrade>
+      <location>Barcelona</location>
+    </rescue>
+    <userAction>Move to a medical center</userAction>
+    <finalAffectationGrade>32</finalAffectationGrade>
+    <finalPlayerExperience>25</finalPlayerExperience>
+  </game>
+</games_data>

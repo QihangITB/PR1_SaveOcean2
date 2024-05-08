@@ -95,11 +95,11 @@ namespace PersistenceLibrary.XMLPersistence
 
         public static List<Rescue> GetRescueList()
         {
-            string path = "../../../Files/XML/rescue.xml";
+            string path = "../../../Files/XML/games_data.xml";
 
             XDocument xmlDoc = XDocument.Load(path);
 
-            var rescues = from rescue in xmlDoc.Descendants("game")
+            var rescues = from rescue in xmlDoc.Descendants("rescue")
                           select new Rescue(
                               (string?)rescue.Element("code") ?? DefaultStringValue,
                               (string?)rescue.Element("date") ?? DefaultStringValue,

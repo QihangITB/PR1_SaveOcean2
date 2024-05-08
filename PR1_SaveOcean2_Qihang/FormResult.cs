@@ -8,6 +8,8 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PersistenceLibrary.XMLPersistence;
+using ObjectLibrary;
 
 namespace PR1_SaveOcean2_Qihang
 {
@@ -41,7 +43,7 @@ namespace PR1_SaveOcean2_Qihang
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             lblResult = new Label();
-            btnSave = new Button();
+            btnHome = new Button();
             lblAffectation = new Label();
             lblExperience = new Label();
             SuspendLayout();
@@ -44,16 +44,16 @@
             lblResult.Text = "CONGRATULATIONS, IT HAS BEEN A SUCCES";
             lblResult.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnSave
+            // btnHome
             // 
-            btnSave.Font = new Font("Segoe UI", 12F);
-            btnSave.Location = new Point(224, 188);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(112, 38);
-            btnSave.TabIndex = 1;
-            btnSave.Text = "SAVE";
-            btnSave.UseVisualStyleBackColor = true;
-            btnSave.Click += btnSave_Click;
+            btnHome.Font = new Font("Segoe UI", 12F);
+            btnHome.Location = new Point(192, 189);
+            btnHome.Name = "btnHome";
+            btnHome.Size = new Size(177, 38);
+            btnHome.TabIndex = 1;
+            btnHome.Text = "RETURN TO MENU";
+            btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += btnSave_Click;
             // 
             // lblAffectation
             // 
@@ -82,7 +82,7 @@
             ClientSize = new Size(558, 250);
             Controls.Add(lblExperience);
             Controls.Add(lblAffectation);
-            Controls.Add(btnSave);
+            Controls.Add(btnHome);
             Controls.Add(lblResult);
             Name = "FormResult";
             Text = "Game result";
@@ -93,7 +93,7 @@
         #endregion
 
         private Label lblResult;
-        private Button btnSave;
+        private Button btnHome;
         private Label lblAffectation;
         private Label lblExperience;
     }
